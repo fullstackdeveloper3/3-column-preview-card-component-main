@@ -1,0 +1,92 @@
+:root {
+    --corner: 5px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+.components {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+    .components {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+.components .container {
+    margin: 0px auto;
+    width: 70%;
+}
+@media (min-width: 768px) {
+    .components .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        width: 50%;
+    }
+}
+.box {
+    padding: 38px 0px 40px 30px;
+}
+.components .container .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: var(--corner);
+    border-top-right-radius: var(--corner);
+}
+.components .container .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.components .container .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: var(--corner);
+    border-bottom-right-radius: var(--corner);
+}
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.2px;
+    font-size: 35px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-right: 19%;
+    line-height: 1.8;
+}
+@media (min-width: 768px) {
+    p {
+        padding-right: 27%
+    }
+}
+img {
+    height: 30px;
+}
+button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+@media (min-width: 768px) {
+    button {
+        margin-top: 50px;
+    }
+}
+.o {
+    color: hsl(31, 77%, 52%);
+}
+.bg {
+    color: hsl(184, 100%, 22%);
+}
+.g {
+    color: hsl(179, 100%, 13%);
+}
+button:active {
+    background-color: transparent;
+    color: white;
+}
